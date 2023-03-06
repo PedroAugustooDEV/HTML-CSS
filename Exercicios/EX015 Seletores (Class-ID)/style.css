@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/*
+    id = #
+    class = .
+
+    id: usar o mesmo id apenas em um único elemento por vez
+    class: pode usar a mesma class em vários elementos por vez  
+
+    regra de hierarquia:
+    genérico: (<h1>, <h2>, <p>) >>>>>>> class: (.basico, .intermediario, avancado) >>>>>>> id: (#principal)
+    (UM SEMPRE VAI HERDAR OS COMANDOS DAS CAMADAS ACIMA)
+
+    Pode ser utilizado mais de um seletor Class por comando:
+    Ex:  <h2 class="basico grifatexto">CSS básico</h2>
+    (apenas dar espaço entre um e outro)
+    */
+
+body {
+    background: cornflowerblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: rgb(38, 31, 182);
+}
+h2 {
+    color: rgb(1, 78, 7);
+}
+.basico {
+    color: rgb(201, 198, 7);
+}
+.intermediario{
+    color: rgb(229, 39, 5);
+}
+.avancado {
+    color: rgb(221, 6, 149);
+}
+.grifatexto {
+    background-color: rgba(137, 43, 226, 0.344);
+}

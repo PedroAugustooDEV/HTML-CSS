@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Grouping Tags </title>
+    <style>
+        body {
+            background-color: slategrey;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 10px;
+        }
+        header {
+            background-color: beige;
+            padding: 10px;
+            margin: 20px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 7px 7px 4px black;
+        }
+        #assuntos {
+            background-color: beige;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 7px 7px 4px black;
+        }
+        #noticias {
+            background-color: beige;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 7px 7px 4px black;
+        }
+        footer {
+            background-image: linear-gradient(to top, blue, rgb(65, 65, 197));
+            text-align: center;
+            padding: 1px;
+            margin: 30px;
+            border-radius: 20px;
+            box-shadow: 7px 7px 4px black;
+        }
+        article> p  {
+            display: none;
+        }
+        article:hover > p  {
+            display: block;
+            background-color: rgba(255, 0, 0, 0.348);
+            border-radius: 20px;
+            margin: 8px;
+        }
+        aside {
+            background-color: rgba(132, 155, 174, 0.532);
+            border-radius: 20px;
+            margin: 8px;
+        }
+        div#bola {
+            height: 300px;
+            width: 300px;
+            background-image: linear-gradient(to top, rgb(171, 69, 171), rgb(225, 16, 16));
+            border-radius: 50%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Caixa e mais caixa!!!!</h1>
+        <nav>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2>Notícia sobre o Vasco</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam cumque exercitationem ipsam, nulla et dolore, illum corporis obcaecati quia porro esse aliquam? Deserunt soluta dolorem vel, accusantium quaerat velit quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nemo, non modi voluptas consequatur quisquam. Quibusdam, nulla. Eum nobis porro exercitationem ullam labore laboriosam quasi assumenda voluptatibus nulla! Dolore, esse?</p>
+                <aside>
+                    - Pelé (Vulgo Edson Arantes)
+                </aside>
+            </article>
+            <article>
+                <aside>
+                    
+                </aside>
+            </article>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Como isso afeta o vasco?</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo tempora nisi consequatur consequuntur iste debitis ab illum eligendi quod necessitatibus fugit amet neque quos, reprehenderit quia ea ipsum impedit vel. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, earum architecto? Voluptatem voluptate placeat enim in perspiciatis expedita a doloribus inventore cupiditate, accusantium, totam amet adipisci quisquam. Totam, sit corporis.</p>
+                <aside>
+                    -Pelé (Vulgo Edson Arantes)
+                </aside>
+            </article>
+            <article>
+                <aside>
+
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Pedrohe4rt ®</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

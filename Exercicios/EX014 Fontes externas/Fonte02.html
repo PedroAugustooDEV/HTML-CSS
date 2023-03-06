@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Gotico';
+            src: url('fonts/Strange Dreams.otf') format('opentype'), url('fonts/Strange Dreams.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        /*
+            Tipos de format()
+            - Opentype (otf)
+            - truetype (ttf)
+            - embbeded-opentype
+            - truetype-att (Apple Advanced Typography)
+            - svg
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+        }
+        h1 {
+            font-family: 'Gotico', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam quia molestiae illo eveniet, eius libero reiciendis minus quis sed doloremque dolorum nemo accusantium at quasi rerum autem corporis reprehenderit molestias.</p>
+</body>
+</html>
