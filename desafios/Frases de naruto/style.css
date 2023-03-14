@@ -145,7 +145,7 @@ h3 {
 #sasuke {
     background-image: url(imagens/sasuke.jpg);
     background-attachment: fixed;
-    background-position: center center;
+    background-position: 70% center;
 }
 #madara {
     background-image: url(imagens/madara.jpg);
@@ -155,7 +155,7 @@ h3 {
 #pain {
     background-image: url(imagens/pain.jpg);
     background-attachment: fixed;
-    background-position: center center;
+    background-position: 70% center;
 }
 #obito {
     background-image: url(imagens/obito.jpg);
@@ -175,12 +175,12 @@ h3 {
 #kakashi {
     background-image: url(imagens/kakashi.jpg);
     background-attachment: fixed;
-    background-position: right center;
+    background-position: 70% center;
 }
 #itachi {
     background-image: url(imagens/itachi.jpg);
     background-attachment: fixed;
-    background-position: right center;
+    background-position: 70% center;
 }
 /*  RODAPÉ  */
 #box {
