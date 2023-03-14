@@ -17,7 +17,7 @@
 
 html, body {
     min-height: 100vh;
-    background-color: rgb(210, 186, 150);
+    background-color: rgb(198, 166, 118);
     font-family: var(--fonte-padrao);
 }
 /*   CABEÇALHO DAQUI PARA BAIXO   */
@@ -48,8 +48,8 @@ header > p {
 }
 /*   ARTICLES   */
 article, section {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
 }
 
 article > p {
@@ -61,10 +61,15 @@ article > p {
 
 .imagem {
     font-family: var(--fonte-principal);
+    text-align: left;
+    max-width: 200px;
+    margin: 10px 0px 10px 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(0, 0, 0, 0.308);
+    border-radius: 7px;
     font-weight: 800;
-    font-size: 1.6em;
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.319);
+    font-size: 1.5em;
 }
 
 .falas {
@@ -75,12 +80,12 @@ article > p {
     padding-bottom: 10px;
 }
 
-#naruto {
+/*#naruto {
     background-image: url(imagens/naruto.jpg);
     background-size: cover;
     background-position: left center;
     height: 50vh;
-}
+}*/
 
 
 
