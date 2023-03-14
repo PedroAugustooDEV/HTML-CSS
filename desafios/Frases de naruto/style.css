@@ -4,10 +4,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:wght@900&display=swap');
+
+@font-face {
+    font-family: 'Naruto';
+    src: url('njnaruto.ttf') format(Truetype);
+}
+
 :root {
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-principal: 'Barlow Condensed', sans-serif;
     --fonte-titulo: 'Abril Fatface', cursive;
+    --fonte-img: 'Merriweather', serif;
+    --fonte-titulo2: 'Naruto', cursive;
 }
 
 * {
@@ -17,8 +26,17 @@
 
 html, body {
     min-height: 100vh;
-    background-color: rgb(198, 166, 118);
+    background-color: rgb(127, 125, 125);
     font-family: var(--fonte-padrao);
+}
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.512);
+    border-radius: 0px 0px 20px 25px;
+    box-shadow: 2px 2px 5px black;
 }
 /*   CABEÇALHO DAQUI PARA BAIXO   */
 header {
@@ -47,29 +65,40 @@ header > p {
     text-shadow: 1px 1px 2px black;
 }
 /*   ARTICLES   */
-article, section {
+article {
     padding-top: 6vh;
     padding-bottom: 6vh;
 }
 
 article > p {
-    padding: 5px 8px;
+    padding: 10px 8px;
     margin: 20px 50px;
     border-left: 3px groove black;
     text-align: left;
 }
 
+section > p {
+    font-family: var(--fonte-img);
+    background-color: rgba(0, 0, 0, 0.411);
+    padding: 5px;
+    max-width: 300px;
+    font-weight: bolder;
+    font-size: 2em;
+    border-radius: 40px 0px 40px 0px;
+    text-align: center;
+    margin-left: 10px;
+    
+}
+
 .imagem {
-    font-family: var(--fonte-principal);
-    text-align: left;
-    max-width: 200px;
-    margin: 10px 0px 10px 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: rgba(0, 0, 0, 0.308);
-    border-radius: 7px;
-    font-weight: 800;
-    font-size: 1.5em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    min-height: 300px;
+    max-height: 700px;
+    border-radius: 50px 0px 50px 0px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.885);
+
 }
 
 .falas {
@@ -77,23 +106,86 @@ article > p {
     font-family: var(--fonte-principal);
     font-weight: 300;
     font-size: 1.4em;
-    padding-bottom: 10px;
+    padding-bottom: 40px;
+    padding-top: 20px;
 }
 
-/*#naruto {
+.bio {
+    font-weight: 900;
+    font-size: 1.3em;
+    margin: 10px;
+}
+
+h2 {
+    font-family: var(--fonte-titulo2);
+    padding-top: 50px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    font-weight: 900;
+    text-align: center;
+    background-image: linear-gradient(to top, rgba(255, 0, 0, 0.856), rgb(255, 200, 0));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+h3 {
+    font-family: var(--fonte-img);
+    margin: 10px;
+}
+
+#naruto {
     background-image: url(imagens/naruto.jpg);
-    background-size: cover;
-    background-position: left center;
-    height: 50vh;
-}*/
-
-
-
-
-
-
-
-
+    background-attachment: fixed;
+    background-position: center center;
+}
+#sasuke {
+    background-image: url(imagens/sasuke.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+}
+#madara {
+    background-image: url(imagens/madara.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+}
+#pain {
+    background-image: url(imagens/pain.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+}
+#obito {
+    background-image: url(imagens/obito.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+}
+#jiraiya {
+    background-image: url(imagens/jiraiya.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+}
+#gaara {
+    background-image: url(imagens/gaara.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+}
+#kakashi {
+    background-image: url(imagens/kakashi.jpg);
+    background-attachment: fixed;
+    background-position: right center;
+}
+#itachi {
+    background-image: url(imagens/itachi.jpg);
+    background-attachment: fixed;
+    background-position: right center;
+}
+/*  RODAPÉ  */
+#box {
+    border-radius: 0px 0px 20px 25px;
+}
 footer {
     text-align: center;
     background-color: black;
@@ -102,6 +194,7 @@ footer {
     font-size: 1.3em;
     padding: 4px;
     box-shadow: 0px -2px 5px 0px rgb(0, 0, 0);
+    margin-top: 40px;
 }
 a {
     color: white;
