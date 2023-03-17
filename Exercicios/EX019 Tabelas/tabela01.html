@@ -12,6 +12,10 @@
             border: 2px solid rgb(0, 0, 0);
             border-collapse: collapse;
         }
+        .cname {
+            background-color: aqua;
+            padding: 50px;
+        }
         td {
             border: 1px solid black;
             padding: 8px;
@@ -30,12 +34,18 @@
             Table Header: Cabeçalho de tabela 
             Table Data: Dado de tabela
     -->
+        
 
     <table>
+        <colgroup>
+            <col class="cname">
+            <col class="col2">
+            <col class="col3">
+        </colgroup>
         <tr>
-            <td>A1
-            <td>A2
-            <td>A3
+            <th scope="col">A1
+            <th scope="col">A2
+            <th scope="col">A3
         </tr>
         <tr class="grey">
             <td>B1
