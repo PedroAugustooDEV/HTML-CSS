@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 2</title>
+</head>
+<body>
+    <!--
+        método autocomplete para cada input como ativar  
+
+        form >> Autocomplete on
+        inputs >> autocomplete  
+    -->
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.js" method="get" autocomplete="off">
+        <p>
+            <label for="uname">Nome:</label>
+            <input type="text" id="uname" required maxlength="12" minlength="6" placeholder="digite seu nome" autocomplete="username">
+        </p>
+        <p>
+            <label for="upass"> Senha:</label>
+            <input type="password" id="upass" required minlength="8" maxlength="14" placeholder="digite sua senha" autocomplete="current-password">
+        </p>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
