@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <script src="cadastro.js"></script>
+</head>
+<body>
+    <!--
+        method GET e POST (a diferença de velocidade de ambos é quase imperceptível )
+
+        GET: 
+        Mais utilizado com dados não sensíveis
+        Até 3.000 bytes (aproximadamente 3 mil letras)
+        Não pode ser usado com dados sensíveis 
+        
+        POST:
+        Usado para dados sensíveis (endereço, senha de cartão e afins)
+        Não aparece os dados na URL
+        Pode enviar mais de 3.000 bytes
+    -->
+    <h1>Meu primeiro formulário</h1>
+    <form autocomplete="off" method="get" action="cadastro.js">
+        <p><label for="inome">Nome</label> 
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p><label for="isobrenome">Sobrenome</label> 
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+
+        <input type="submit" value="Enviar" id="Enviar">
+    </form>
+</body>
+</html>
