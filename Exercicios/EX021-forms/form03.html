@@ -8,14 +8,22 @@
 </head>
 <body>
     <h1>Teste de formulário</h1>
-    <form action="cadastro.js" method="get">
+    <form action="cadastro.js" method="get" autocomplete="on">
         <p>
-            <label for=""></label>
-            <input type="text">
+            <label for="inome">Nome do aluno:</label>
+            <input type="text" id="inome" placeholder="Seu nome completo" maxlength="40" required>
         </p>
         <p>
-            <label for=""></label>
-            <input type="text">
+            <label for="icpf">CPF do aluno:</label>
+            <input type="text" name="" id="icpf" placeholder="ex:123.456.789-00" required>
+        </p>
+        <p>
+            <label for="imedia">Média do aluno:</label>
+            <input type="number" id="imedia" step="0.1" min="0" max="10" placeholder="0 a 10" required >
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
         </p>
     </form>
 </body>
