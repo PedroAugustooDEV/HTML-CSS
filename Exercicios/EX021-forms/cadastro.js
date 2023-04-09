@@ -1,1 +1,1 @@
-os dados foram coletados com sucesso
+os dados foram coletados com sucesso.

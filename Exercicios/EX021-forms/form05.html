@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>
+        Form
+    </h1>
+    <form action="cadastro.js" method="get">
+        <fieldset>
+            <legend>Radio button escolha seu sexo</legend>
+
+            <input type="radio" name="sexo" id="imas" value="M"><label for="imas">masculino</label> <br>
+            <input type="radio" name="sexo" id="ifem" value="F"><label for="ifem">Feminino</label> <br>
+            <input type="radio" name="sexo" id="iout" value="O"><label for="iout">Outro</label> 
+        </fieldset>
+        <fieldset>
+            <legend>Checkbox escolha seu esporte favorito</legend>
+
+                <input type="checkbox" id="iesfut"><label for="iesfut">futebol</label><br> 
+                <input type="checkbox" id="iesvol"><label for="iesvol">Vôlei</label><br>
+                <input type="checkbox" id="iesbas"><label for="iesbas">Basquete</label><br>
+                <input type="checkbox" id="iesten"><label for="iesten">Tênis</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+</body>
+</html>
