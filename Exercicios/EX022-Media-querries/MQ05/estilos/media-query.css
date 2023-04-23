@@ -13,18 +13,23 @@ TV e telas extra grandes: 1201px e mais
 @media screen and (min-width: 768px) {
     #imenu {
         display: none;
+
+        transition: 1s;
     }
 
     menu {
         display: block;
+        transition: 1s;
     }
 
     menu > ul > li {
         display: inline-block;
         margin-right: 5px;
+        transition: 1s;
     }
 
     main {
         max-width: 768px;
+        transition: 1s;
     }
 }
